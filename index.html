@@ -81,7 +81,7 @@ dialog img{border:8px solid #fff;border-radius:6px;max-height:86vh;margin:auto}
 footer{background:var(--ink);color:var(--bg);text-align:center;padding:0 20px 28px;font-size:14px;opacity:.95}
 .wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:35;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 6px 16px rgba(0,0,0,.3)}
 .wa svg{width:32px;height:32px;fill:#fff}
-@media(max-width:760px){nav{display:none}.hero .wrap,.about .wrap{grid-template-columns:1fr}.stack{height:400px;max-width:420px;margin:0 auto;width:100%}.stack .a,.stack .b,.stack .c{width:42%;height:auto;aspect-ratio:1}.stack .m{width:50%;height:auto;aspect-ratio:1}section{padding:56px 0}}
+@media(max-width:760px){header .wrap{flex-direction:column;justify-content:center;height:auto;padding-top:8px;padding-bottom:8px;gap:0}nav{gap:18px;font-size:14px;flex-wrap:wrap;justify-content:center}html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 96px)}.hero .wrap,.about .wrap{grid-template-columns:1fr}.stack{height:400px;max-width:420px;margin:0 auto;width:100%}.stack .a,.stack .b,.stack .c{width:42%;height:auto;aspect-ratio:1}.stack .m{width:50%;height:auto;aspect-ratio:1}section{padding:56px 0}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 
 .hero{background-color:#fff0f2;background-image:repeating-linear-gradient(0deg,rgba(244,167,180,.4) 0 30px,transparent 30px 60px),repeating-linear-gradient(90deg,rgba(244,167,180,.4) 0 30px,transparent 30px 60px);padding:48px 0 64px}
@@ -131,7 +131,7 @@ footer{background:var(--ink);color:var(--bg);text-align:center;padding:0 20px 28
 </style></head><body>
 <header><div class="wrap"><a class="logo" href="#inicio">Dulces <i>Jo</i></a>
 <nav><a href="#carta">Carta</a><a href="#pedir">Cómo pedir</a><a href="#galeria">Cositas</a><a href="#jo">Sobre mí</a></nav>
-<a class="btn" data-wa="Hola Jo! Quiero hacer un pedido" href="#">Pedir</a></div></header>
+</div></header>
 <main>
 <section class="hero" id="inicio"><div class="wrap">
 <span class="script tag">Hecho con mucho amor</span>
