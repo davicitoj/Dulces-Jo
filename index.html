@@ -140,6 +140,11 @@ footer{background:var(--ink);color:var(--bg);text-align:center;padding:0 20px 28
 .opts{margin-top:10px}.opts button{padding:6px 10px;font-size:14.5px;border-radius:10px}
 .plus{width:24px;height:24px;font-size:17px;line-height:24px}.pp{gap:8px}
 @media(max-width:560px){.grid{grid-template-columns:1fr;gap:12px}.card{flex-direction:row}.card img{width:108px;aspect-ratio:auto;flex:none;object-fit:cover}.card .in{flex:1;min-width:0;padding:10px 12px}.card h3{font-size:18px}.card .note{font-size:12.5px}.opts button{font-size:14px;padding:5px 8px}}
+.gal{columns:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px}
+.gal button{margin:0;border-width:4px 4px 12px;transform:none!important;box-shadow:0 3px 8px rgba(74,40,28,.18)}
+.gal button:hover{transform:scale(1.05)!important}
+.gal img{aspect-ratio:1;width:100%;object-fit:cover}
+@media(max-width:560px){.gal{grid-template-columns:repeat(3,1fr);gap:8px}}
 </style></head><body>
 <header><div class="wrap"><a class="logo" href="#inicio">Dulces <i>Jo</i></a>
 <nav><a href="#carta">Carta</a><a href="#pedir">Cómo pedir</a><a href="#galeria">Cositas</a><a href="#jo">Sobre mí</a></nav>
