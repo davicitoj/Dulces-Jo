@@ -132,6 +132,14 @@ footer{background:var(--ink);color:var(--bg);text-align:center;padding:0 20px 28
 .strip img{aspect-ratio:1/1.15;border-width:4px;border-radius:999px 999px 14px 14px}
 .strip img:nth-child(even){margin-top:14px}
 @media(max-width:760px){.strip{grid-template-columns:repeat(4,1fr);gap:8px;margin-top:24px}.strip img{border-width:3px}.strip img:nth-child(even){margin-top:10px}}
+.grid{grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.card,.card:nth-child(3n),.card:nth-child(3n+2){border-radius:20px}
+.card img{aspect-ratio:16/10}
+.card .in{padding:12px 14px 14px}
+.card h3{font-size:20px}.card .note{font-size:13.5px;line-height:1.4;margin-top:4px}
+.opts{margin-top:10px}.opts button{padding:6px 10px;font-size:14.5px;border-radius:10px}
+.plus{width:24px;height:24px;font-size:17px;line-height:24px}.pp{gap:8px}
+@media(max-width:560px){.grid{grid-template-columns:1fr;gap:12px}.card{flex-direction:row}.card img{width:108px;aspect-ratio:auto;flex:none;object-fit:cover}.card .in{flex:1;min-width:0;padding:10px 12px}.card h3{font-size:18px}.card .note{font-size:12.5px}.opts button{font-size:14px;padding:5px 8px}}
 </style></head><body>
 <header><div class="wrap"><a class="logo" href="#inicio">Dulces <i>Jo</i></a>
 <nav><a href="#carta">Carta</a><a href="#pedir">Cómo pedir</a><a href="#galeria">Cositas</a><a href="#jo">Sobre mí</a></nav>
