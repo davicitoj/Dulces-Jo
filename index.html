@@ -128,6 +128,10 @@ footer{background:var(--ink);color:var(--bg);text-align:center;padding:0 20px 28
 .card .plus{box-shadow:0 2px 0 rgba(74,40,28,.25)}
 .special{margin-top:32px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;background:var(--bg2);border:3px dashed var(--red);border-radius:28px;padding:24px 28px}
 .special h3{font-size:26px}.special p{margin:6px 0 0;color:var(--soft);max-width:34em}
+.strip{max-width:520px;gap:10px;margin-top:30px}
+.strip img{aspect-ratio:1/1.15;border-width:4px;border-radius:999px 999px 14px 14px}
+.strip img:nth-child(even){margin-top:14px}
+@media(max-width:760px){.strip{grid-template-columns:repeat(4,1fr);gap:8px;margin-top:24px}.strip img{border-width:3px}.strip img:nth-child(even){margin-top:10px}}
 </style></head><body>
 <header><div class="wrap"><a class="logo" href="#inicio">Dulces <i>Jo</i></a>
 <nav><a href="#carta">Carta</a><a href="#pedir">Cómo pedir</a><a href="#galeria">Cositas</a><a href="#jo">Sobre mí</a></nav>
